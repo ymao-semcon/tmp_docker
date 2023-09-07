@@ -9,17 +9,10 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Switch back to the default user
-USER ubuntu
-
 # Install the requirement packages
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache-dir -r /tmp/requirements.txt
 RUN rm -rf /tmp/requirements.txt
 
-
-# Install VS Code extensions
-RUN code --install-extension ms-python.python && \
-    code --install-extension ms-toolsai.jupyter
 
 CMD echo "Hello Johan"
