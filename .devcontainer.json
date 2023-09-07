@@ -1,6 +1,6 @@
 {
     "name": "Ubuntu",
-    "image": "ydsemcon/cus_ubuntu:latest", 
+    "image": "ydsemcon/cus_ubuntu:0.0.1", 
     "features": {
         "ghcr.io/devcontainers/features/git:1": {},
         "ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
