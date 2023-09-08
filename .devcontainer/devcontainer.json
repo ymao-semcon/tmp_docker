@@ -2,8 +2,9 @@
     "name": "Ubuntu",
     "image": "ydsemcon/cus_ubuntu:latest", 
     "features": {
-        "ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
-    },
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
+	},
     "remoteUser": "root",
     "customizations": {
         "vscode": {

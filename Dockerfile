@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Update package lists and install required packages
 RUN apt-get update && \
-    apt-get -y install python-is-python3 python3-pip libgl1-mesa-glx libxrender1 xvfb git && \
+    apt-get -y install python-is-python3 python3-pip libgl1-mesa-glx libxrender1 xvfb && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
